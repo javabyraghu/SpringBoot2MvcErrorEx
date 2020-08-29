@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+</head>
+<body>
+<div class="container">
+	<h1>My Custom Error Page</h1>
+	<table class="table table-bordered">
+		<tr>
+			<td>Date</td>
+			<td th:text="${timestamp}" />
+		</tr>
+		<tr>
+			<td>Path</td>
+			<td th:text="${path}" />
+		</tr>
+		<tr>
+			<td>Error</td>
+			<td th:text="${error}" />
+		</tr>
+		<tr>
+			<td>Status</td>
+			<td th:text="${status}" />
+		</tr>
+		<tr>
+			<td>Message</td>
+			<td th:text="${message}" />
+		</tr>
+		<tr>
+			<td>Trace</td>
+			<td th:text="${trace}"></td>
+		</tr>
+	</table>
+</div>	
+</body>
+</html>
